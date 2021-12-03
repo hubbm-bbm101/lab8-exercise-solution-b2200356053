@@ -12,7 +12,7 @@ with open("students.txt") as f:
     students = sys.argv[2].split(",")
     for i in students:
         try:
-            print(i,notes[i],end="")
+            print(i,notes[i],end=",")
         except KeyError:
-            print("No record of ‘Ahmet’ was found!",end="")
+            print("No record of ‘Ahmet’ was found!",end=",")
         
